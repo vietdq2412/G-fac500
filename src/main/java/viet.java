@@ -42,7 +42,9 @@ public class viet {
 //        for (int i = 0; i < rs.size(); i++) {
 //            System.out.print(rs.get(i));
 //        }
-        rs = giaithua(450);
+        System.out.println("nhap n: ");
+        int num = sc.nextInt();
+        rs = giaithua(num);
         System.out.print("\nrs: ");
         for (int i = 0; i < rs.size(); i++) {
             System.out.print(rs.get(i));
@@ -50,6 +52,7 @@ public class viet {
 
     }
 
+    ///logn
     private static List cong(List<Integer> n1, List<Integer> n2) {
         List<Integer> result = new ArrayList<>();
         int dif = n1.size() - n2.size();
@@ -116,6 +119,8 @@ public class viet {
         return result;
     }
 
+
+    ////logn
     private static List chuyenSoThanhArray(int num) {
         List<Integer> result = new ArrayList<>();
         int rest = num;
